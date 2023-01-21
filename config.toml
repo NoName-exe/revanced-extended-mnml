@@ -1,24 +1,22 @@
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
-
-compression-level = 9         # compression level for module zips. between 1 and 9
-logging-to-file = true        # enables logging of every patch process to a seperate file
-enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
-parallel-jobs = 3             # max number of concurrent building jobs
-update-prebuilts = true       # dont touch this
+compression-level = 9 # compression level for module zips. between 1 and 9
+logging-to-file = true # enables logging of every patch process to a seperate file
+enable-magisk-update = true # set this to false if you do not want to receive updates for the module in magisk app
+parallel-jobs = 3 # max number of concurrent building jobs
 build-mindetach-module = false
-
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+rv-brand = "ReVanced eXtended MNML"
 
 [YouTube]
-enabled = true                                                        # add 'enabled = false' key to entries to not build them
-build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = "custom-branding-name custom-video-speed enable-old-layout enable-seekbar-tapping header-switch hide-cast-button hide-create-button hide-endscreen-cards hide-endscreen-overlay hide-fullscreen-buttoncontainer hide-shorts-button hide-stories hide-time-and-seekbar layout-switch translations"                                        # whitespace seperated list of patches to exclude (multiline strings are not supported)
-included-patches = ""                                            # whitespace seperated list of patches to include
-version = "auto"                                                      # 'auto', 'latest' or a custom one like '17.40.41'
-exclusive-patches = false                                             # excludes all patches by default
-microg-patch = "microg-support"
+enabled = true # add 'enabled = false' key to entries to not build them
+build-mode = "both" # 'both', 'apk' or 'module'
+excluded-patches = "custom-branding-name custom-video-speed enable-old-layout enable-seekbar-tapping header-switch hide-cast-button hide-create-button hide-endscreen-cards hide-endscreen-overlay hide-fullscreen-buttoncontainer hide-shorts-button hide-stories hide-time-and-seekbar layout-switch translations" # whitespace seperated list of patches to exclude (multiline strings are not supported)
+included-patches = "" # whitespace seperated list of patches to include
+version = "auto" # 'auto', 'latest' or a custom one like '17.40.41'
+exclusive-patches = false # excludes all patches by default
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "ytrvx-magisk"
-merge-integrations = true
 
 [Music-arm64]
 build-mode = "both"
@@ -26,8 +24,6 @@ app-name = "YouTube-Music"
 excluded-patches = "compact-header enable-force-shuffle enable-zen-mode hide-music-cast-button translations-music"
 included-patches = ""
 version = "auto"
-microg-patch = "music-microg-support"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 module-prop-name = "ytmusicrvx-magisk"
 arch = "arm64-v8a"
-merge-integrations = true
