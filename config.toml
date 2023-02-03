@@ -22,7 +22,7 @@ module-prop-name = "ytrvx-magisk"
 [Music-arm64]
 build-mode = "both"
 app-name = "YouTube-Music"
-excluded-patches = "compact-header enable-force-shuffle enable-zen-mode hide-music-cast-button translations-music"
+excluded-patches = "enable-zen-mode hide-compact-header hide-music-cast-button translations-music"
 included-patches = ""
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
