@@ -12,7 +12,7 @@ rv-brand = "ReVanced eXtended MNML"
 [YouTube]
 enabled = true
 build-mode = "both" # 'both', 'apk' or 'module'
-excluded-patches = "custom-branding-name custom-video-speed enable-old-layout enable-seekbar-tapping force-vp9-codec header-switch hide-cast-button hide-create-button hide-endscreen-cards hide-endscreen-overlay hide-fullscreen-buttoncontainer hide-shorts-button hide-stories hide-time-and-seekbar layout-switch translations" # whitespace seperated list of patches to exclude (multiline strings are not supported)
+excluded-patches = "custom-branding-name custom-video-speed enable-old-layout enable-seekbar-tapping force-vp9-codec header-switch hide-cast-button hide-create-button hide-endscreen-cards hide-endscreen-overlay hide-fullscreen-panels hide-shorts-button hide-stories hide-time-and-seekbar layout-switch translations" # whitespace seperated list of patches to exclude (multiline strings are not supported)
 included-patches = "" # whitespace seperated list of patches to include
 version = "auto" # 'auto', 'latest' or a custom one like '17.40.41'
 exclusive-patches = false # excludes all patches by default
