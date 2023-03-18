@@ -13,12 +13,12 @@ rv-brand = "ReVanced eXtended MNML"
 [YouTube]
 enabled = true
 build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = "custom-branding-name custom-video-speed default-video-speed enable-seekbar-tapping force-vp9-codec header-switch hide-cast-button hide-create-button hide-endscreen-cards hide-endscreen-overlay hide-fullscreen-buttoncontainer hide-fullscreen-panels hide-seekbar hide-shorts-button hide-stories hide-time-stamp layout-switch translations"                                        # whitespace seperated list of patches to exclude (multiline strings are not supported)
+excluded-patches = "custom-branding-name custom-video-speed default-video-speed enable-seekbar-tapping enable-timestamps-speed force-vp9-codec header-switch hide-cast-button hide-create-button hide-endscreen-cards hide-endscreen-overlay hide-fullscreen-buttoncontainer hide-fullscreen-panels hide-seekbar hide-shorts-button hide-stories hide-time-stamp layout-switch protobuf-spoof translations"                                        # whitespace seperated list of patches to exclude (multiline strings are not supported)
 included-patches = ""                                                 # whitespace seperated list of patches to include
 version = "auto"                                                      # 'auto', 'latest' or a custom one like '17.40.41'
 exclusive-patches = false                                             # excludes all patches by default
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-module-prop-name = "ytrvx-magisk"
+module-prop-name = "yt-rvx"
 
 [Music-arm64]
 build-mode = "both"
@@ -27,5 +27,5 @@ excluded-patches = "enable-zen-mode hide-compact-header hide-music-cast-button h
 included-patches = ""
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-module-prop-name = "ytmusicrvx-magisk"
+module-prop-name = "ytm-rvx"
 arch = "arm64-v8a"
