@@ -21,6 +21,7 @@ Get the [latest CI release](https://github.com/NoName-exe/revanced-extended-mnml
 * YouTube-Music Magisk Module is installed as a user app and does not require a reboot to install/update.
 * Use [mindetach](https://github.com/j-hc/mindetach-magisk) to block Play Store from updating YouTube and YouTube-Music.
 * Non-root versions of YouTube and YouTube-Music require [Vanced MicroG](https://github.com/inotia00/VancedMicroG/releases/latest) to work.
+* Support Magisk and KernelSU
 
 ## Credits
 [j-hc](https://github.com/j-hc) for [mindetach](https://github.com/j-hc/mindetach-magisk) and the [script on which this is based on](https://github.com/j-hc/revanced-magisk-module).
