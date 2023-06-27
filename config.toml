@@ -1,4 +1,3 @@
-compression-level = 9         # compression level for module zips. between 1 and 9
 logging-to-file = true        # enables logging of every patch process to a seperate file
 enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
 build-mindetach-module = false
@@ -6,25 +5,24 @@ patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 rv-brand = "ReVanced eXtended MNML"
 
-# add 'enabled = false' for not patching a specific app or remove its entry
+# add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube]
-enabled = true
 build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = "change-homepage custom-branding-name custom-double-tap-length custom-video-speed default-video-speed enable-seekbar-tapping enable-tablet-navigation-bar enable-timestamps-speed force-vp9-codec header-switch hide-cast-button hide-category-bar hide-channel-avatar-section hide-endscreen-cards hide-endscreen-overlay hide-fullscreen-panels hide-quick-actions hide-seekbar hide-stories hide-time-stamp layout-switch protobuf-spoof translations"                                        # whitespace seperated list of patches to exclude (multiline strings are not supported)
-included-patches = ""                                                 # whitespace seperated list of patches to include
-version = "auto"                                                      # 'auto', 'latest' or a custom one like '17.40.41'
-exclusive-patches = false                                             # excludes all patches by default
+excluded-patches = "change-homepage custom-branding-name custom-double-tap-length custom-video-speed default-video-speed enable-seekbar-tapping enable-tablet-navigation-bar enable-timestamps-speed force-vp9-codec header-switch hide-cast-button hide-category-bar hide-channel-avatar-section hide-endscreen-cards hide-endscreen-overlay hide-fullscreen-panels hide-quick-actions hide-seekbar hide-stories hide-time-stamp layout-switch protobuf-spoof translations"                                                 # space-seperated patches to exclude (multiline strings are not supported)
+included-patches = ""                                                 # space-seperated patches to include (non-excluded patches are included by default)
+version = "auto"                                                      # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
+exclusive-patches = false                                             # excludes all patches by default and only applies included-patches
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-module-prop-name = "yt-rvx"
+module-prop-name = "yt-rvx-mnml"
 
-[Music-arm64]
+[Music]
 build-mode = "both"
 app-name = "YouTube-Music"
 excluded-patches = "enable-zen-mode hide-button-shelf hide-carousel-shelf hide-category-bar hide-music-cast-button hide-playlist-card translations-music"
 included-patches = ""
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-module-prop-name = "ytm-rvx"
+module-prop-name = "ytm-rvx-mnml"
 arch = "arm64-v8a"
