@@ -10,8 +10,8 @@ rv-brand = "ReVanced eXtended MNML"
 
 [YouTube]
 build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = "change-homepage custom-branding-name custom-double-tap-length custom-video-speed default-video-speed enable-seekbar-tapping enable-tablet-navigation-bar enable-timestamps-speed force-vp9-codec header-switch hide-cast-button hide-category-bar hide-channel-avatar-section hide-endscreen-cards hide-endscreen-overlay hide-fullscreen-panels hide-quick-actions hide-seekbar hide-stories hide-time-stamp layout-switch protobuf-spoof translations"                                                 # space-seperated patches to exclude (multiline strings are not supported)
-included-patches = ""                                                 # space-seperated patches to include (non-excluded patches are included by default)
+excluded-patches = "change-homepage custom-branding-icon-revancify-blue custom-branding-youtube-name custom-double-tap-length custom-package-name custom-video-speed default-video-speed disable-hdr-video enable-compact-controls-overlay enable-seekbar-tapping enable-tablet-navigation-bar enable-timestamps-speed force-opus-codec force-vp9-codec header-switch hide-cast-button hide-category-bar hide-channel-avatar-section hide-endscreen-cards hide-fullscreen-panels hide-load-more-button hide-seekbar hide-snack-bar hide-time-stamp language-switch layout-switch spoof-app-version spoof-player-parameters translations"                                                 # space-seperated patches to exclude (multiline strings are not supported)
+included-patches = "add-splash-animation force-hide-player-button-background hide-double-tap-overlay-filter"                                                 # space-seperated patches to include (non-excluded patches are included by default)
 version = "auto"                                                      # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
 exclusive-patches = false                                             # excludes all patches by default and only applies included-patches
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
@@ -20,9 +20,14 @@ module-prop-name = "yt-rvx-mnml"
 [Music]
 build-mode = "both"
 app-name = "YouTube-Music"
-excluded-patches = "enable-zen-mode hide-button-shelf hide-carousel-shelf hide-category-bar hide-music-cast-button hide-playlist-card translations-music"
-included-patches = ""
+excluded-patches = "custom-branding-icon-revancify-blue custom-package-name enable-custom-filter enable-zen-mode hide-button-shelf hide-carousel-shelf hide-cast-button hide-category-bar hide-playlist-card spoof-app-version translations"
+included-patches = "custom-branding-icon-mmt"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 module-prop-name = "ytm-rvx-mnml"
-arch = "arm64-v8a"
+apkmirror-arch = "arm64-v8a"
+
+[Reddit]
+apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
+version = "auto"
+excluded-patches = "hide-create-button hide-discover-button"
