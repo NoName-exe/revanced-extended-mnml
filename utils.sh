@@ -149,6 +149,7 @@ get_patch_last_supported_ver() {
 	inc_sel=${inc_sel:-false}
 	if [ "$4" = false ]; then inc_sel="${inc_sel} or .excluded==false"; fi
 	jq -r ".[]
+			| .name |= ascii_downcase | .name |= gsub(\"\\\\s\";\"-\")
 			| select(.compatiblePackages[].name==\"${1}\")
 			| select(${inc_sel})
 			| select(${exc_sel:-true})
