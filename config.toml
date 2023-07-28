@@ -20,7 +20,7 @@ module-prop-name = "yt-rvx-mnml"
 [Music]
 build-mode = "both"
 app-name = "YouTube-Music"
-excluded-patches = "custom-branding-icon-revancify-blue custom-package-name enable-custom-filter enable-zen-mode hide-button-shelf hide-carousel-shelf hide-cast-button hide-category-bar hide-playlist-card spoof-app-version translations"
+excluded-patches = "custom-branding-icon-revancify-blue custom-branding-music-name custom-package-name enable-custom-filter enable-zen-mode hide-button-shelf hide-carousel-shelf hide-cast-button hide-category-bar hide-playlist-card spoof-app-version translations"
 included-patches = "custom-branding-icon-mmt"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
