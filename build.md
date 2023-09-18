@@ -2,6 +2,8 @@ Music: 6.19.51
 YouTube: 18.31.40  
 Reddit: 2023.36.0  
 
+# Clean Install Mandatory!
+
 Install [Vanced MicroG](https://github.com/inotia00/VancedMicroG/releases) or [mMicroG](https://github.com/inotia00/mMicroG/releases) to be able to use non-root YouTube or YouTube-Music  
 
 [Main Repo](https://github.com/NoName-exe/revanced-extended-mnml)  
