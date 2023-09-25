@@ -10,8 +10,8 @@ rv-brand = "ReVanced eXtended MNML"
 
 [YouTube]
 build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = "alternative-thumbnails change-homepage custom-branding-icon-revancify-blue custom-branding-youtube-name custom-double-tap-length custom-package-name custom-playback-speed default-playback-speed disable-hdr-video enable-compact-controls-overlay enable-seekbar-tapping enable-tablet-navigation-bar enable-time-stamps-speed force-opus-codec force-vp9-codec header-switch hide-cast-button hide-category-bar hide-channel-avatar-section hide-endscreen-cards hide-fullscreen-panels hide-latest-videos-button hide-load-more-button hide-seekbar hide-snack-bar hide-time-stamp higher-seekbar-height language-switch layout-switch replace-dismiss-queue spoof-app-version spoof-player-parameters translations"                                                 # space-seperated patches to exclude (multiline strings are not supported)
-included-patches = "add-splash-animation force-hide-player-button-background hide-double-tap-overlay-filter optimize-resource"                                                 # space-seperated patches to include (non-excluded patches are included by default)
+excluded-patches = "append-time-stamps-information change-homepage custom-branding-youtube-name custom-branding-icon-revancify-blue custom-double-tap-length custom-package-name default-playback-speed disable-hdr-video enable-compact-controls-overlay enable-seekbar-tapping enable-tablet-navigation-bar force-opus-codec force-vp9-codec header-switch hide-cast-button hide-end-screen-cards hide-fullscreen-panels hide-latest-videos-button hide-load-more-button hide-player-button-background hide-seekbar hide-snack-bar hide-time-stamp language-switch layout-switch spoof-app-version spoof-player-parameters translations"                                                 # space-seperated patches to exclude (multiline strings are not supported)
+included-patches = "add-splash-animation force-hide-player-button-background hide-double-tap-overlay-filter"                                                 # space-seperated patches to include (non-excluded patches are included by default)
 version = "auto"                                                      # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "yt-rvx-mnml"
@@ -19,7 +19,7 @@ module-prop-name = "yt-rvx-mnml"
 [Music]
 build-mode = "both"
 app-name = "YouTube-Music"
-excluded-patches = "custom-branding-icon-revancify-blue custom-branding-music-name custom-package-name enable-custom-filter enable-playback-speed enable-zen-mode hide-button-shelf hide-carousel-shelf hide-cast-button hide-category-bar hide-playlist-card hide-radio-button hide-sample-button remember-playback-speed spoof-app-version translations"
+excluded-patches = "custom-branding-music-name custom-branding-icon-revancify-blue custom-package-name custom-playback-speed enable-custom-filter enable-opus-codec enable-playback-speed enable-zen-mode hide-button-shelf hide-carousel-shelf hide-cast-button hide-category-bar hide-playlist-card hide-radio-button remember-playback-speed replace-dismiss-queue spoof-app-version start-page translations"
 included-patches = "custom-branding-icon-mmt"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
