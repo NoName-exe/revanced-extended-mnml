@@ -1,15 +1,33 @@
 [
-    {
-      "patchName": "Custom package name",
-      "options": [
-        {
-          "key": "YouTubePackageName",
-          "value": "yt.rvx.mnml.noname.exe"
-        },
-        {
-          "key": "MusicPackageName",
-          "value": "ytm.rvx.mnml.noname.exe"
-        }
-      ]
-    }
-  ]
+  {
+    "patchName": "Custom package name",
+    "options": [
+      {
+        "key": "PackageNameYouTube",
+        "value": "yt.rvx.mnml.noname.exe"
+      },
+      {
+        "key": "PackageNameYouTubeMusic",
+        "value": "ytm.rvx.mnml.noname.exe"
+      }
+    ]
+  },
+  {
+    "patchName": "Overlay buttons",
+    "options": [
+      {
+        "key": "OutlineIcon",
+        "value": true
+      }
+    ]
+  },
+  {
+    "patchName": "SponsorBlock",
+    "options": [
+      {
+        "key": "OutlineIcon",
+        "value": true
+      }
+    ]
+  }
+]
