@@ -1,6 +1,6 @@
 Music: 6.25.53  
-Reddit: 2023.42.0  
 YouTube: 18.41.39  
+Reddit: 2023.42.0  
 
 Install [Vanced MicroG](https://github.com/inotia00/VancedMicroG/releases) or [mMicroG](https://github.com/inotia00/mMicroG/releases) to be able to use non-root YouTube or YouTube-Music.  
 Use [mindetach](https://github.com/j-hc/mindetach-magisk) or [zygisk-detach](https://github.com/j-hc/zygisk-detach) to block Play Store from updating YouTube and YouTube-Music.  
