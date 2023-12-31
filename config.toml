@@ -21,7 +21,7 @@ module-prop-name = "yt-rvx-mnml"
 [Music]
 build-mode = "both"
 app-name = "YouTube-Music"
-excluded-patches = "'Change start page' 'Custom branding icon YouTube Music' 'Custom branding name YouTube Music' 'Custom playback speed' 'Enable custom filter' 'Enable playback speed' 'Enable zen mode' 'Hide button shelf' 'Hide carousel shelf' 'Hide cast button' 'Hide category bar' 'Hide history button' 'Hide playlist card' 'Hide radio button' 'Remember playback speed' 'Replace dismiss queue' 'Spoof app version' 'Translations'"
+excluded-patches = "'Change start page' 'Custom branding icon YouTube Music' 'Custom branding name YouTube Music' 'Custom playback speed' 'Enable custom filter' 'Enable playback speed' 'Enable zen mode' 'Hide button shelf' 'Hide carousel shelf' 'Hide cast button' 'Hide category bar' 'Hide history button' 'Hide playlist card' 'Remember playback speed' 'Replace dismiss queue' 'Spoof app version' 'Translations'"
 included-patches = "'Replace cast button'"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
