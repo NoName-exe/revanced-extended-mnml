@@ -1,5 +1,31 @@
 [
   {
+    "patchName": "Custom Shorts action buttons",
+    "options": [
+      {
+        "key": "IconType",
+        "value": "outline"
+      }
+    ]
+  },
+  {
+    "patchName": "Custom branding icon for YouTube",
+    "options": [
+      {
+        "key": "ChangeSplashIcon",
+        "value": "true"
+      },
+      {
+        "key": "RestoreOldSplashAnimation",
+        "value": "true"
+      },
+      {
+        "key": "AppIcon",
+        "value": "afn_red"
+      }
+    ]
+  },
+  {
     "patchName": "Custom package name",
     "options": [
       {
@@ -16,8 +42,17 @@
     "patchName": "Overlay buttons",
     "options": [
       {
-        "key": "OutlineIcon",
-        "value": true
+        "key": "IconType",
+        "value": "rounded"
+      }
+    ]
+  },
+  {
+    "patchName": "Settings for YouTube",
+    "options": [
+      {
+        "key": "RVXSettingsMenuName",
+        "value": "ReVanced eXtended MNML"
       }
     ]
   },
@@ -26,7 +61,29 @@
     "options": [
       {
         "key": "OutlineIcon",
-        "value": true
+        "value": "true"
+      }
+    ]
+  },
+  {
+    "patchName": "Visual preferences icons",
+    "options": [
+      {
+        "key": "RVXSettingsMenuIcon",
+        "value": "custom_branding icon"
+      }
+    ]
+  },
+  {
+    "patchName": "Custom branding icon for YouTube Music",
+    "options": [
+      {
+        "key": "ChangeSplashIcon",
+        "value": "true"
+      },
+      {
+        "key": "AppIcon",
+        "value": "mmt"
       }
     ]
   }
