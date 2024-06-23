@@ -1,3 +1,4 @@
+       
 [
   {
     "patchName": "Custom Shorts action buttons",
@@ -12,16 +13,16 @@
     "patchName": "Custom branding icon for YouTube",
     "options": [
       {
+        "key": "AppIcon",
+        "value": "youtube"
+      },
+      {
         "key": "ChangeSplashIcon",
         "value": true
       },
       {
         "key": "RestoreOldSplashAnimation",
         "value": true
-      },
-      {
-        "key": "AppIcon",
-        "value": "youtube"
       }
     ]
   },
@@ -61,7 +62,7 @@
     "options": [
       {
         "key": "OutlineIcon",
-        "value": "true"
+        "value": true
       }
     ]
   },
@@ -78,13 +79,41 @@
     "patchName": "Custom branding icon for YouTube Music",
     "options": [
       {
-        "key": "ChangeSplashIcon",
-        "value": true
-      },
-      {
         "key": "AppIcon",
         "value": "mmt"
+      },
+      {
+        "key": "ChangeSplashIcon",
+        "value": true
+      }
+    ]
+  },
+  {
+    "patchName": "Settings for YouTube Music",
+    "options": [
+      {
+        "key": "RVXSettingsMenuName",
+        "value": "ReVanced eXtended MNML"
+      }
+    ]
+  },
+  {
+    "patchName": "Change package name",
+    "options": [
+      {
+        "key": "PackageNameReddit",
+        "value": "rdt.rvx.mnml.noname.exe"
+      }
+    ]
+  },
+  {
+    "patchName": "Settings for Reddit",
+    "options": [
+      {
+        "key": "RVXSettingsMenuName",
+        "value": "ReVanced eXtended MNML"
       }
     ]
   }
 ]
+        
