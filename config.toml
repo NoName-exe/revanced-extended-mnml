@@ -10,9 +10,9 @@ rv-brand = "ReVanced eXtended MNML"
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-build-mode = "both"                                                   
-excluded-patches = "'Alternative thumbnails' 'Change start page' 'Custom branding name for YouTube' 'Custom double tap length' 'Disable auto audio tracks' 'Disable splash animation' 'Enable debug logging' 'Layout switch' 'Spoof app version' 'Spoof client' 'Translations for YouTube'"                                                 
-included-patches = "'Force hide player buttons background' 'Hide Shorts dimming' 'Hide animated button background' 'Hide double tap overlay filter' 'MaterialYou' 'Visual preferences icons'"                                                 
+build-mode = "both"
+included-patches = "'Force hide player buttons background' 'Hide Shorts dimming' 'MaterialYou' 'Return YouTube Username'"
+excluded-patches = "'Alternative thumbnails' 'Change start page' 'Custom double tap length' 'Enable debug logging' 'Layout switch' 'Theme' 'Translations for YouTube'"
 version = "auto"                                                      
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "yt-rvx-mnml"
@@ -20,8 +20,8 @@ module-prop-name = "yt-rvx-mnml"
 [Music]
 build-mode = "both"
 app-name = "YouTube-Music"
-excluded-patches = "'Change start page' 'Custom branding name for YouTube Music' 'Enable debug logging' 'Restore old style library shelf' 'Spoof app version' 'Translations for YouTube Music'"
-included-patches = "'Custom header for YouTube Music' 'Hide double tap overlay filter' 'Hide player overlay filter'"
+included-patches = "'Custom header for YouTube Music' 'Hide player overlay filter' 'Return YouTube Username'"
+excluded-patches = "'Change start page' 'Custom branding name for YouTube Music' 'Enable debug logging' 'Translations for YouTube Music'"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 module-prop-name = "ytm-rvx-mnml"
