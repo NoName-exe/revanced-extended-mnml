@@ -1,7 +1,5 @@
 enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
 patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced eXtended MNML"
 parallel-jobs = 1
 
@@ -12,23 +10,20 @@ parallel-jobs = 1
 
 [YouTube]
 build-mode = "both"
+version = "auto"
 included-patches = "'Force hide player buttons background' 'Hide Shorts dimming' 'MaterialYou' 'Return YouTube Username'"
-excluded-patches = "'Alternative thumbnails' 'Change start page' 'Custom double tap length' 'Enable debug logging' 'Layout switch' 'Theme' 'Translations for YouTube'"
-version = "auto"                                                      
+excluded-patches = "'Alternative thumbnails' 'Change layout' 'Change start page' 'Disable forced auto audio tracks' 'Disable splash animation' 'Enable debug logging' 'Spoof app version' 'Theme' 'Translations for YouTube'"
+patcher-args = "-e 'Custom Shorts action buttons' -OiconType=outline -e 'Custom branding icon for YouTube' -OappIcon=mmt -OchangeSplashIcon=true -OrestoreOldSplashAnimation=true -e  'Custom branding name for YouTube' -OappName='ReVanced eXtended MNML ' -e 'GmsCore support' -OpackageNameYouTube=yt.rvx.mnml.noname.exe -e 'Overlay buttons' -OiconType=rounded -OwiderButtonsSpace=true -OchangeTopButtons=true -e 'Settings for YouTube' -OrvxSettingsLabel='ReVanced eXtended MNML ' -e 'Snack bar components' -OapplyCornerRadiusToPlaylistBottomBar=true -e SponsorBlock -OoutlineIcon=true -e 'Visual preferences icons for YouTube' -OsettingsMenuIcon=custom_branding_icon -OapplyToAll=true "
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "yt-rvx-mnml"
 
 [Music]
 build-mode = "both"
 app-name = "YouTube-Music"
-included-patches = "'Custom header for YouTube Music' 'Hide player overlay filter' 'Return YouTube Username'"
-excluded-patches = "'Change start page' 'Custom branding name for YouTube Music' 'Enable debug logging' 'Translations for YouTube Music'"
 version = "auto"
+arch = "arm64-v8a"
+included-patches = "'Custom header for YouTube Music' 'Disable music video in album' 'Hide player overlay filter' 'Return YouTube Username'"
+excluded-patches = "'Change start page' 'Custom branding name for YouTube Music' 'Enable debug logging' 'Spoof app version' 'Translations for YouTube Music'"
+patcher-args = "-e 'Custom branding icon for YouTube Music' -OappIcon=mmt -OchangeSplashIcon=true -OrestoreOldSplashIcon=true -e 'Custom header for YouTube Music' -OcustomHeader=custom_branding_icon -e 'Dark theme' -OmaterialYou=true -e 'GmsCore support' -OpackageNameYouTubeMusic=ytm.rvx.mnml.noname.exe -e 'Settings for YouTube Music' -OrvxSettingsLabel='ReVanced eXtended MNML ' -e 'Visual preferences icons for YouTube Music' -OsettingsMenuIcon=custom_branding_icon "
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 module-prop-name = "ytm-rvx-mnml"
-arch = "arm64-v8a"
-
-[Reddit]
-apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
-version = "auto"
-excluded-patches = "'Hide recommended communities shelf' 'Premium icon'"
