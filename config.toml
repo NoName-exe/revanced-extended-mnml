@@ -12,7 +12,7 @@ parallel-jobs = 1
 build-mode = "both"
 version = "auto"
 included-patches = "'Force hide player buttons background' 'Hide Shorts dimming' 'MaterialYou' 'Return YouTube Username'"
-excluded-patches = "'Alternative thumbnails' 'Change layout' 'Change start page' 'Disable forced auto audio tracks' 'Disable splash animation' 'Enable debug logging' 'Spoof app version' 'Theme' 'Translations for YouTube'"
+excluded-patches = "'Alternative thumbnails' 'Change form factor' 'Change start page' 'Disable forced auto audio tracks' 'Disable layout updates' 'Disable splash animation' 'Enable debug logging' 'Spoof app version' 'Theme' 'Translations for YouTube'"
 patcher-args = "-e 'Custom Shorts action buttons' -OiconType=outline -e 'Custom branding icon for YouTube' -OappIcon=mmt -OchangeSplashIcon=true -OrestoreOldSplashAnimation=true -e  'Custom branding name for YouTube' -OappName='ReVanced eXtended MNML ' -e 'GmsCore support' -OpackageNameYouTube=yt.rvx.mnml.noname.exe -e 'Overlay buttons' -OiconType=rounded -OwiderButtonsSpace=true -OchangeTopButtons=true -e 'Settings for YouTube' -OrvxSettingsLabel='ReVanced eXtended MNML ' -e 'Snack bar components' -OapplyCornerRadiusToPlaylistBottomBar=true -e SponsorBlock -OoutlineIcon=true -e 'Visual preferences icons for YouTube' -OsettingsMenuIcon=custom_branding_icon -OapplyToAll=true "
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "yt-rvx-mnml"
