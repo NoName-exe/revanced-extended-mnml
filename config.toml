@@ -1,6 +1,7 @@
-enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
-patches-source = "inotia00/revanced-patches"
-rv-brand = "ReVanced eXtended MNML"
+enable-module-update = true # set this to false if you do not want to receive updates for the module
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe MNML"
 parallel-jobs = 1
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
@@ -11,19 +12,21 @@ parallel-jobs = 1
 [YouTube]
 build-mode = "both"
 version = "auto"
-included-patches = "'Force hide player buttons background' 'Hide Shorts dimming' 'MaterialYou' 'Return YouTube Username'"
-excluded-patches = "'Alternative thumbnails' 'Change form factor' 'Change start page' 'Disable forced auto audio tracks' 'Disable layout updates' 'Disable splash animation' 'Enable debug logging' 'Spoof app version' 'Theme' 'Translations for YouTube'"
-patcher-args = "-e 'Custom Shorts action buttons' -OiconType=outline -e 'Custom branding icon for YouTube' -OappIcon=mmt -OchangeSplashIcon=true -OrestoreOldSplashAnimation=true -e  'Custom branding name for YouTube' -OappName='ReVanced eXtended MNML ' -e 'GmsCore support' -OpackageNameYouTube=yt.rvx.mnml.noname.exe -e 'Overlay buttons' -OiconType=rounded -OwiderButtonsSpace=true -OchangeTopButtons=true -e 'Settings for YouTube' -OrvxSettingsLabel='ReVanced eXtended MNML ' -e 'Snack bar components' -OapplyCornerRadiusToPlaylistBottomBar=true -e SponsorBlock -OoutlineIcon=true -e 'Visual preferences icons for YouTube' -OsettingsMenuIcon=custom_branding_icon -OapplyToAll=true "
+included-patches = "'Change package name'"
+excluded-patches = "'Alternative thumbnails' 'Change form factor' 'Change header' 'Change start page' 'Disable double tap actions' 'Disable haptic feedback' 'Disable rolling number animations' 'Disable video codecs' 'Double tap to seek' 'Enable debugging' 'Hide end screen cards' 'Hide info cards' 'Hide related videos' 'Hide timestamp' 'Open Shorts in regular player' 'Open videos fullscreen' 'Reload video' 'Shorts autoplay' 'Spoof device dimensions'"
+patcher-args = "-e 'Change package name' -OpackageName=yt.morphe.mnml.noname.exe -e 'Theme' -OdarkThemeBackgroundColor=@android:color/system_neutral1_900"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-module-prop-name = "yt-rvx-mnml"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+module-prop-name = "yt-morphe-mnml"
 
 [Music]
 build-mode = "both"
 app-name = "YouTube-Music"
 version = "auto"
 arch = "arm64-v8a"
-included-patches = "'Custom header for YouTube Music' 'Disable music video in album' 'Hide player overlay filter' 'Return YouTube Username'"
-excluded-patches = "'Change start page' 'Custom branding name for YouTube Music' 'Enable debug logging' 'Spoof app version' 'Translations for YouTube Music'"
-patcher-args = "-e 'Custom branding icon for YouTube Music' -OappIcon=mmt -OchangeSplashIcon=true -OrestoreOldSplashIcon=true -e 'Custom header for YouTube Music' -OcustomHeader=custom_branding_icon -e 'Dark theme' -OmaterialYou=true -e 'GmsCore support' -OpackageNameYouTubeMusic=ytm.rvx.mnml.noname.exe -e 'Settings for YouTube Music' -OrvxSettingsLabel='ReVanced eXtended MNML ' -e 'Visual preferences icons for YouTube Music' -OsettingsMenuIcon=custom_branding_icon "
+included-patches = "'Change package name'"
+excluded-patches = "'Enable debugging'"
+patcher-args = "-e 'Change package name' -OpackageName=ytm.morphe.mnml.noname.exe -e 'Theme' -OdarkThemeBackgroundColor=@android:color/system_neutral1_900"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-module-prop-name = "ytm-rvx-mnml"
+module-prop-name = "ytm-morphe-mnml"
