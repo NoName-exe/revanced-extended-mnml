@@ -1,6 +1,6 @@
 {
-  "version": "v8.12.53 (patches: 5.6.2)",
-  "versionCode": 146,
-  "zipUrl": "https://github.com/NoName-exe/revanced-extended-mnml/releases/download/146/youtube-music-revanced-extended-mnml-magisk-v8.12.53-arm64-v8a.zip",
+  "version": "v8.44.54 (patches 1.20.0.mpp)",
+  "versionCode": 147,
+  "zipUrl": "https://github.com/NoName-exe/revanced-extended-mnml/releases/download/147/youtube-music-morphe-mnml-module-v8.44.54-arm64-v8a.zip",
   "changelog": "https://raw.githubusercontent.com/NoName-exe/revanced-extended-mnml/update/build.md"
 }

@@ -1,9 +1,11 @@
-Music: 8.12.53  
-YouTube: 19.47.53  
+Music: 8.44.54  
+YouTube: 20.45.36  
 
-Install [MicroG](https://github.com/ReVanced/GmsCore/releases) to be able to use non-root YouTube or YouTube-Music.  
+Install [MicroG](https://github.com/MorpheApp/MicroG-RE) to be able to use non-root YouTube or YouTube-Music.  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to block Play Store from updating YouTube and YouTube-Music.  
 
 [Main Repo](https://github.com/NoName-exe/revanced-extended-mnml)
   
-CLI:  
+CLI: MorpheApp/morphe-cli-1.5.0-all.jar  
+Patches: MorpheApp/patches-1.20.0.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.20.0)  
